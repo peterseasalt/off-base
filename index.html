@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Off Base Test | Peter Noonan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300;700&display=swap" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <section>
+    <h1 class="centered black drop-shadow">Meeting scheduling <span class="orange">made easy</span></h1>
+    <div class="max-960">
+      <p class="centered">Never miss a meeting. Never be late for one too. Keep track of your meetings and receive smart reminders in appropriate times. Read your smart “Daily Agenda” every morning.</p>
+    </div>
+    <div class="buttons centered margin-top-5 margin-bottom-10">
+      <a href="javascript:void(0);" class="button orange-background bold">Get Started</a>
+      <a href="javascript:void(0);" class="button">Learn More</a>
+    </div>
+    <img src="storage/stylish-working-from-home.svg" alt="A man and a woman working on scheduling from a home office" class="centered max-960">
+  </section>
+  <section class="columns-2 gap">
+    <div class="margin-bottom-5">
+      <h2 class="red"><span class="black red-underline">Write once, <br></span>use everywhere!</h2>
+      <p>Snippy is a rich coding snippets app that lets you create your own code snippets, categorize them, and even sync them in the cloud so you can use them anywhere. All that is free!</p>
+      <div class="buttons margin-top-5">
+        <a href="javascript:void(0);" class="button red-background">Get Started</a>
+        <a href="javascript:void(0);" class="button" id="how-it-works">How it Works</a>
+      </div>
+    </div>
+    <div>
+      <video class="rounded" id="video" controls>
+        <source src="storage/video.mp4" />
+      </video>
+    </div>
+  </section>
+  <script type="text/javascript">
+    let video = document.getElementById('video');
+    let videoButton = document.getElementById('how-it-works');
+    
+    videoButton.addEventListener('click', playVideo);
+    
+    function playVideo() {
+      if (video.paused) {
+        video.play();
+      }
+      else {
+        video.pause();
+      }
+    }
+  </script>
+</body>
+</html>
